@@ -45,5 +45,12 @@
     "@deepseek-ai/cordis": "*",
     "@deepseek-ai/schemastery": "*",
     "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forfeeling/dsh-vault.git"
   }
 }
