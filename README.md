@@ -1,5 +1,7 @@
 # dsh-vault（密码小程序）
 
+> 📦 npm 包名已改为 **`@forfeeling/dsh-vault`**（unscoped `dsh-vault` 被他人占用）。安装：`dsh plugin add @forfeeling/dsh-vault`
+
 DeepSeek Harness（DSH）的零知识密钥保险库：通过 IM、对话、GUI 表单或 CLI 登记密码 / API key / token，
 sops+age 加密落盘，调取需密保挑战，**明文永不进入模型上下文、浏览器与日志**。
 
@@ -33,10 +35,10 @@ printf '%s' '已有密钥' | secretctl add MY_KEY --system 某系统 --stdin
 mkdir -p ~/.dsh/skills/secret-store && cp skills/secret-store/SKILL.md ~/.dsh/skills/secret-store/
 
 # 5.（可选）安装 GUI 插件
-cp -r plugin/dsh-vault ~/.dsh/profiles/web/node_modules/dsh-vault
+cp -r plugin/dsh-vault ~/.dsh/profiles/web/node_modules/@forfeeling/dsh-vault
 # 在 ~/.dsh/profiles/web/package.json 中：
-#   dependencies 加 "dsh-vault": "file:node_modules/dsh-vault"
-#   dsh.profile.bundles 数组加 "dsh-vault"
+#   dependencies 加 "@forfeeling/dsh-vault": "file:node_modules/@forfeeling/dsh-vault"
+#   dsh.profile.bundles 数组加 "@forfeeling/dsh-vault"
 # 重启 dsh web（参考 scripts/restart-dsh-web.sh）→ 设置 → 插件 → 🔐 密钥库
 ```
 

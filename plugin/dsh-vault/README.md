@@ -25,10 +25,10 @@ DeepSeek Harness 插件：`secretctl`（sops+age 加密密钥库）的 GUI 管�
 ## 安装（profile 方式）
 
 ```bash
-cp -r plugin/dsh-vault ~/.dsh/profiles/web/node_modules/dsh-vault
+cp -r plugin/dsh-vault ~/.dsh/profiles/web/node_modules/@forfeeling/dsh-vault
 # ~/.dsh/profiles/web/package.json:
-#   dependencies 加  "dsh-vault": "file:node_modules/dsh-vault"
-#   dsh.profile.bundles 数组加  "dsh-vault"
+#   dependencies 加  "@forfeeling/dsh-vault": "file:node_modules/@forfeeling/dsh-vault"
+#   dsh.profile.bundles 数组加 "@forfeeling/dsh-vault"
 # 然后重启 dsh web
 ```
 

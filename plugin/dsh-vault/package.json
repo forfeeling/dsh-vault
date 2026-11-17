@@ -1,6 +1,6 @@
 {
-  "name": "dsh-vault",
-  "version": "0.1.0",
+  "name": "@forfeeling/dsh-vault",
+  "version": "0.2.0",
   "description": "DSH 密钥库插件：secretctl(sops+age) 的 GUI 管理页（条目/登记/密保/审计）。零知识：明文不进浏览器，秘密值只上行入库。",
   "type": "module",
   "main": "lib/host.js",
